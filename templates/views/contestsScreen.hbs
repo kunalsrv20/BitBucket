@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Bucket</title>
+    <link rel="stylesheet" href="./css/contestsStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="screenContainer">
+        
+        {{!-- left navbar --}}
+        <div class="leftContainerDiv">
+            <ul>
+                
+                <li class="tileOption"> 
+                    <a href="/" class="left_aTag">
+                        <img src="home.svg" class="imageIcon" alt="Home Icon"> 
+                        <div class="linkText">
+                            <h3>Home</h3>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tileOption">
+                    <a href="/contests" class="left_aTag">
+                        <img src="contests.png" class="imageIcon" alt="Contests Icon">
+                        <div class="linkText">
+                            <h3>Contest</h3>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tileOption">
+                    <a href="/userProfile" class="left_aTag">
+                        <img src="analysis.png" class="imageIcon" alt="Profile Icon">
+                        <div class="linkText">
+                            <h3>Analyse</h3>
+                        </div>
+                    </a>
+                </li>
+                
+                <li class="tileOption">
+                    <a href="/contests" class="left_aTag">
+                        <img src="problem.png" class="imageIcon" alt="Profile Icon">
+                        <div class="linkText">
+                            <h3>Problems</h3>
+                        </div>
+                    </a>
+                </li>
+                
+                
+                <li class="tileOption">
+                    <a href="https://rs20-online-chat-app.herokuapp.com/" class="left_aTag">
+                        <img src="chat.png" class="imageIcon" alt="GroupChat Icon">
+                        <div class="linkText">
+                            <h3>Groups</h3>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tileOption">
+                    <a href="https://calendar.google.com/" class="left_aTag">
+                        <img src="calendar.png" class="imageIcon" alt="Profile Icon">
+                        <div class="linkText">
+                            <h3>Calender</h3>
+                        </div>
+                    </a>
+                </li>
+                
+
+                <li class="tileOption">
+                    <a href="/info" class="left_aTag">
+                        <img src="info.png" class="imageIcon" alt="Info Icon">
+                        <div class="linkText">
+                            <h3>Info</h3>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tileOption">
+                    <a href="/" class="left_aTag">
+                        <img src="profile.png" class="imageIcon" alt="Profile Icon">
+                        <div class="linkText">
+                            <h3>Profile</h3>
+                        </div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        {{!-- left navbar end --}}
+
+        <div class="leftPaddingDiv"></div>
+        <div class="middleContainerDiv">
+            {{!-- <div class="middleBodyTopHeading">
+                <h1>Contests</h1>
+            </div> --}}
+
+            <div class="main">
+      <div class="navbar">
+        <div class="dropdown">
+            <div class="filterButtonDiv">
+                <button class="dropbtn">Filter
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            
+          <div class="dropdown-content">
+            <div class="duration">
+              <a href="#"  class = "parameters_anchor" >Duration:</a>
+              <div class="duration_parameters">
+                <table = "filter_table">
+                  <tr>
+                    <th>
+                      <input type="checkbox" id="less_than_1hr" name="less_than_1hr" value="less_than_1hr">
+                      <label for="Less_than_1hr"> Less than 2hr </label><br>
+                    </th>
+                    <th>
+                      <input type="checkbox" id="less_than_2hr" name="less_than_2hr" value="less_than_2hr">
+                      <label for="Less_than_2hr"> Less than 3hrs</label><br>
+                    </th>
+                    <th>
+                      <input type="checkbox" id="less_than_3hr" name="less_than_3hr" value="less_than_3hr">
+                      <label for="Less_than_1hr"> Less than 1day</label><br>
+                    </th>
+                    <th>
+                      <input type="checkbox" id="greater_than_3hr" name="greater_than_3hr" value="greater_than_3hr">
+                      <label for="Less_than_1hr"> Less than 2days</label><br>
+                    </th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="organizer">
+              <a href="#" class = "parameters_anchor" >Organizer:</a>
+              <div class="organizer_parameters">
+                <table = "filter_table">
+                  <tr>
+                    <th>
+                      <input type="checkbox" id="codeforces" name="codeforces" value="codeforces">
+                      <label for="codeforces"> Codeforces </label><br>
+                    </th>
+                    <th>
+                      <input type="checkbox" id="atcoder" name="atcoder" value="atcoder">
+                      <label for="atcoder"> Atcoder </label><br>
+                    </th>
+                    <th>
+                      <input type="checkbox" id="codechef" name="codechef" value="codechef">
+                      <label for="codechef"> Codechef</label><br>
+                    </th>
+                    <th>
+                      <input type="checkbox" id="leetCode" name="leetCode" value="leetCode">
+                      <label for="leetCode"> LeetCode </label><br>
+                    </th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            {{!-- <div class="division">
+              <a href="#" class = "parameters_anchor">Division:</a>
+              <div class="division_parameters">
+                <table = "filter_table">
+                  <tr>
+                    <th>
+                      <input type="checkbox" id="div1" name="div1" value="div1">
+                      <label for="div1"> Division1 </label><br>
+                    </th>
+                    <th>
+                      <input type="checkbox" id="div2" name="div2" value="div2">
+                      <label for="div2">Division2</label><br>
+                    </th>
+                    <th>
+                      <input type="checkbox" id="div3" name="div3" value="div3">
+                      <label for="div3">Division3</label><br>
+                    </th>
+                    <th>
+                      <input type="checkbox" id="div4" name="div4" value="div4">
+                      <label for="div4">Division4</label><br>
+                    </th>
+                  </tr>
+                </table>
+              </div>
+            </div> --}}
+
+            <div class="applyContainer" id="applyFilterButton">
+                <button type="button" class="apply">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="middle_container" id="contestMainDiv">
+        <table style="width:100%" class="contest_table" id="contestMainTable">
+          <tr>
+            <th class="th-class" id="sortByContestName">
+              <button class="table-head-button" style="padding-left:2vw;padding-right:2vw;">Contest Name
+                <i class="fa fa-caret-down"></i>
+              </button>
+            </th>
+            <th class="th-class" id="sortByDate">
+              <button class="table-head-button">Date
+                <i class="fa fa-caret-down"></i>
+              </button>
+            </th>
+            <th class="th-class" id="sortByDuration">
+              <button class="table-head-button">Duration
+                <i class="fa fa-caret-down"></i>
+              </button>
+            </th>
+            <th class="th-class" id="sortByOrganizerName">
+              <button class="table-head-button">Organizer
+                <i class="fa fa-caret-down"></i>
+              </button>
+            </th>
+            <th class="th-class">
+              <button class="table-head-button">Starts At
+              </button>
+            </th>
+            <th class="th-class">
+              <button class="table-head-button">Calendar
+              </button>
+            </th>
+            <th class="th-class">
+              <button class="table-head-button">Re-direct
+              </button>
+            </th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="footerDivContainer">
+
+      </div>
+    </div>
+
+    {{!-- <div class="bottom_container">
+      <a class="footer-link" href="https://www.linkedin.com/in/kunalsrv20/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/kunalsrv20">Twitter</a>
+      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+      <p class="copyright">© BitBucket</p>
+    </div> --}}
+
+    </div>
+        <div class="rightPaddingDiv"></div>
+        <div class="rightContainerDiv"></div>
+    </div>
+</body>
+<script src="./js/contestsScript.js"></script>
+</html>

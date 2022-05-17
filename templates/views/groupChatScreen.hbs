@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Bucket</title>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/groupChatsStyle.css">
+</head>
+<body>
+    <div class="screenContainer">
+        
+        {{!-- left navbar --}}
+        <div class="leftContainerDiv">
+            <ul>
+                
+                <li class="tileOption"> 
+                    <a href="/" class="left_aTag">
+                        <img src="home.svg" class="imageIcon" alt="Home Icon"> 
+                        <div class="linkText">
+                            <h3>Home</h3>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tileOption">
+                    <a href="/contests" class="left_aTag">
+                        <img src="contests.png" class="imageIcon" alt="Contests Icon">
+                        <div class="linkText">
+                            <h3>Contest</h3>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tileOption">
+                    <a href="/userProfile" class="left_aTag">
+                        <img src="analysis.png" class="imageIcon" alt="Profile Icon">
+                        <div class="linkText">
+                            <h3>Analyse</h3>
+                        </div>
+                    </a>
+                </li>
+                
+                <li class="tileOption">
+                    <a href="/contests" class="left_aTag">
+                        <img src="problem.png" class="imageIcon" alt="Profile Icon">
+                        <div class="linkText">
+                            <h3>Problems</h3>
+                        </div>
+                    </a>
+                </li>
+                
+                
+                <li class="tileOption">
+                    <a href="/groupChats" class="left_aTag">
+                        <img src="chat.png" class="imageIcon" alt="GroupChat Icon">
+                        <div class="linkText">
+                            <h3>Groups</h3>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tileOption">
+                    <a href="https://calendar.google.com/" class="left_aTag">
+                        <img src="calendar.png" class="imageIcon" alt="Profile Icon">
+                        <div class="linkText">
+                            <h3>Calender</h3>
+                        </div>
+                    </a>
+                </li>
+                
+
+                <li class="tileOption">
+                    <a href="/info" class="left_aTag">
+                        <img src="info.png" class="imageIcon" alt="Info Icon">
+                        <div class="linkText">
+                            <h3>Info</h3>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="tileOption">
+                    <a href="/" class="left_aTag">
+                        <img src="profile.png" class="imageIcon" alt="Profile Icon">
+                        <div class="linkText">
+                            <h3>Profile</h3>
+                        </div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        {{!-- left navbar end --}}
+        <div class="leftPaddingDiv"></div>
+        <div class="middleContainerDiv">
+            <div class="middleBodyTopHeading">
+                <h1>Connect</h1>
+            </div>
+
+            <div class="allGroupsContainer" id="groupsChatContainer">
+                <div class="groupRowClass" id="groupsInFirstRow">
+                    <div class="groupDiv" id="row1Group1Id">
+                        
+                    </div>
+                    <div class="groupDiv" id="row1Group2Id">
+
+                    </div>
+                    <div class="groupDiv" id="row1Group3Id">
+
+                    </div>
+                    <div class="groupDiv" id="row1Group4Id">
+
+                    </div>
+                </div>
+                <div class="groupRowClass" id="groupsInSecondRow">
+                    <div class="groupDiv" id="row2Group1Id">
+
+                    </div>
+                    <div class="groupDiv" id="row2Group2Id">
+
+                    </div>
+                    <div class="groupDiv" id="row2Group3Id">
+
+                    </div>
+                    <div class="groupDiv" id="row2Group4Id">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightPaddingDiv"></div>
+        <div class="rightContainerDiv"></div>
+    </div>
+</body>
+<script src="./js/groupScript.js"></script>
+</html>
